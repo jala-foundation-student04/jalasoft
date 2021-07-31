@@ -16,8 +16,9 @@ const columns= [
   { title: "name", field: "name" },
   { title: "lastName", field: "lastName" },
   { title: "email", field: "email" },
-  { title: "city", field: "city" },
-  { title: "country", field: "country" }
+  { title: "country", field: "country" },
+  { title: "city", field: "city" }
+  
 
 ]
 

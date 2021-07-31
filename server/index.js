@@ -17,7 +17,7 @@ app.get("/test", (req,res)=>{
     
     const newContact =  new contactSchema ({
     name : "leoric", lastName: "asrad" ,email : "asy@gmail.com", 
-    country: "quito", city: "ecuador"  })
+    country: "Ecuador", city: "Quito"  })
 try {
      newContact.save();
     res.json(newContact);
