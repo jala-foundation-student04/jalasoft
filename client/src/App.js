@@ -6,6 +6,7 @@ import {tableIcons} from './icons.js'
 
 import './App.css';
 
+
 const columns= [
   { title: "name", field: "name" },
   { title: "lastName", field: "lastName" },
@@ -15,19 +16,27 @@ const columns= [
 
 ]
 
-
+const api = 'http://localhost:5000'
 function App() {
 
-  const [data,SetData]= useState([]);
+  const [data,setData]= useState([]);
 
-
+const  getData = ()=>{
+  axios.get(api).then(response=>{
+    setData(response.data);
+  }
+    )
+}
+useEffect(() => {
+  getData(); 
+}, [])
 
   return (
     <MaterialTable
       icons= {tableIcons}
       columns= {columns}
       title = "Contact Page Jalasoft Dev Tes"
-      
+      data = {data}
     />
 
   );
