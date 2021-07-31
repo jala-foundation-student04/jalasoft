@@ -12,7 +12,10 @@ app.use(express.json({ limit: "30mb", extended : true}));
 app.use(express.urlencoded({limit: "30mb", extended: true  }));
 app.use(cors());
 
+// rutas crud
 app.use("/", getRoutes);
+
+//ruta de prueba
 app.get("/test", (req,res)=>{
     
     const newContact =  new contactSchema ({

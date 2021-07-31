@@ -16,6 +16,7 @@ import ViewColumn from '@material-ui/icons/ViewColumn';
 
 import {  forwardRef } from 'react';
 
+// exportamos los iconos necesarios para la tabla (viene en documentacion de material table)
 export const tableIcons = {
 Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
 Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
