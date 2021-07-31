@@ -12,13 +12,13 @@ const api = 'http://localhost:5000'
 
 
 
-const columns = [
-  {    title: 'Name',  field: 'name'},
-  {    title: 'lastName',    field: 'lastName',       },
-  {    title: 'Email',    field: 'email'       }  ,
-  {    title: 'City',    field: 'city'   },
-  {    title: 'Country',    field: 'Country'   }, 
-  
+const columns= [
+  { title: "name", field: "name" },
+  { title: "lastName", field: "lastName" },
+  { title: "email", field: "email" },
+  { title: "city", field: "city" },
+  { title: "country", field: "country" }
+
 ]
 
 function App() {
