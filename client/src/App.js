@@ -76,7 +76,6 @@ const [data,setData] = useState([]);
 
 
 
-
   return (
     // componente que me permite crear una table data
     <MaterialTable
