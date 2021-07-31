@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import MaterialTable from 'material-table';
+import {React, useEffect, useState} from 'react';
+import axios from 'axios';
+
+import {tableIcons} from './icons.js'
+
 import './App.css';
 
+const columns= [
+  { title: "name", field: "name" },
+  { title: "lastName", field: "lastName" },
+  { title: "email", field: "email" },
+  { title: "city", field: "city" },
+  { title: "country", field: "country" }
+
+]
+
+
 function App() {
+
+  const [data,SetData]= useState([]);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MaterialTable
+      icons= {tableIcons}
+      columns= {columns}
+      title = "Contact Page Jalasoft Dev Tes"
+      
+    />
+
   );
 }
 
